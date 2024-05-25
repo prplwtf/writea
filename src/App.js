@@ -11,6 +11,6 @@ document.addEventListener("DOMContentLoaded", (async () => {
     if (typeof window.Configuration == 'undefined') return;
     clearInterval(interval);
 
-    Navigate("Home")
+    Route("")
   }, 10);
 }))
