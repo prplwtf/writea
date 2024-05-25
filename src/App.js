@@ -3,12 +3,8 @@ document.addEventListener("DOMContentLoaded", (async () => {
   App = document.getElementById("App")
   AppTitle = document.getElementById("AppTitle")
 
-  // Prepare global variables
-  var Configuration = []
-
   // Initialize application
   await FetchConfiguration() // Fetch and render configuration
-  await FetchBlogs() // Fetch and render configuration
 
   // Navigate home
   var interval = setInterval(function() {
