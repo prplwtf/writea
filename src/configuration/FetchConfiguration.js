@@ -1,6 +1,6 @@
 async function FetchConfiguration() {
   var xhr = new XMLHttpRequest()
-  xhr.open("GET", "./config/Configuration.yml", true)
+  xhr.open("GET", "./configuration/Configuration.yml", true)
   xhr.onreadystatechange = async function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var res = jsyaml.load(xhr.responseText)

@@ -1,4 +1,4 @@
-function UnloadScript(id) {
+function Unload(id) {
   var script = document.getElementById(id);
   if (script) {
     script.parentNode.removeChild(script);

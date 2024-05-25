@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", (async () => {
   App = document.getElementById("App")
   AppTitle = document.getElementById("AppTitle")
 
-  // Initialize application
-  await FetchConfiguration() // Fetch and render configuration
+  // Import components
+  await ImportConfigurations()
+  await ImportElements()
 
   // Navigate home
   var interval = setInterval(function() {

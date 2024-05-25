@@ -1,10 +1,16 @@
 function Route(view) {
   window.location.hash = view
-  UnloadScript("Container")
+  Unload("Section")
 
-  if(view == "") {
-    return LoadScript("./src/views/pages/RootContainer.js", "Container", function() {
-      App.innerHTML = `${RootContainer()}`
+  if(view == "" || view == "#") {
+    return Import("./src/components/sections/RootSection.js", "Section", function() {
+      App.innerHTML = `${RootSection()}`
+    })
+  }
+
+  if(view == "#blog") {
+    return Import("./src/components/sections/BlogSection.js", "Section", function() {
+      App.innerHTML = `${BlogSection()}`
     })
   }
 
