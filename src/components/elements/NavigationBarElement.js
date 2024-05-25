@@ -3,6 +3,7 @@ function NavigationBarElement() {
   if(window.location.hash != "#blog") {
     ButtonClass = "btn-danger"
   }
+  
   return `
     <div class="row">
       <div class="col-9">
@@ -11,8 +12,9 @@ function NavigationBarElement() {
         </h3>
       </div>
       <div class="col-3">
-        <button class="btn ${ButtonClass} float-end" onclick="Route('#blog')">
+        <button type="button" class="btn ${ButtonClass} float-end rounded-5" onclick="Route('#blog')">
           Blogs
+          <span class="ripple-surface"></span>
         </button>
       </div>
     </div>

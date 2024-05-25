@@ -1,6 +1,6 @@
 async function ImportElements() {
   const Elements = [
-		{ Identifier: "NavigationBarElement", Path: "NavigationBarElement.js" }
+		{ Identifier: "NavigationBarElement", Path: "NavigationBarElement.js" },
 	]
 
   for (let i = Elements.length - 1; i >= 0; i--) {
