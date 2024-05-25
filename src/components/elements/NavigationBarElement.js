@@ -16,12 +16,12 @@ function NavigationBarElement() {
   
   return `
     <div class="row mb-3">
-      <div class="col-9">
+      <div class="col-6">
         <h3 class="fw-bolder text-danger-emphasis" onclick="Route('#')" style='cursor: pointer'>
           ${window.Configuration.Application.Title}
         </h3>
       </div>
-      <div class="col-3">
+      <div class="col-6">
         <button type="button" class="btn ${ButtonClass} float-end rounded-5" onclick="Route('#blog')">
           posts
         </button>
