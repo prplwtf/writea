@@ -3,6 +3,7 @@ function BlogSection() {
     ${NavigationBarElement()}
     <p>
       blog section
+      ${BlogListSection()}
     </p>
     ${FooterElement()}
   `

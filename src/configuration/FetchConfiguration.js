@@ -1,4 +1,5 @@
 let ConfigurationURL = "./configuration/Configuration.yml"
+let ExampleConfiguration = false
 
 async function FetchConfiguration() {
   var xhr = new XMLHttpRequest()
@@ -12,13 +13,9 @@ async function FetchConfiguration() {
     }
     if (xhr.readyState == 4 && xhr.status == 404) {
       if(ConfigurationURL != "./configuration/Configuration.example.yml") {
-        ProgressBar(99.99, 5)
-        App.innerHTML = `${MissingConfigurationElement()}`
-        setTimeout(() => {
-          ProgressBar(100)
-          ConfigurationURL = "./configuration/Configuration.example.yml"
-          FetchConfiguration()
-        }, 5000);
+        ExampleConfiguration = true
+        ConfigurationURL = "./configuration/Configuration.example.yml"
+        FetchConfiguration()
       } else {
         await RenderConfiguration()
         return console.error("Configuration.yml could not be found!")
