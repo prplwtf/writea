@@ -1,5 +1,9 @@
 async function FetchConfiguration() {
   var xhr = new XMLHttpRequest()
+  let ConfigurationURL = "./configuration/Configuration.yml"
+  if(window.location.hostname == "gravity.prpl.wtf") {
+    ConfigurationURL = "./configuration/Configuration.example.yml"
+  }
   xhr.open("GET", "./configuration/Configuration.yml", true)
   xhr.onreadystatechange = async function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
@@ -9,6 +13,8 @@ async function FetchConfiguration() {
       return;
     }
     if (xhr.readyState == 4 && xhr.status == 404) {
+      window.Configuration = false
+      await RenderConfiguration()
       return console.error("Configuration.yml could not be found!")
     }
   }
