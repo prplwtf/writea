@@ -3,7 +3,9 @@
   position: fixed;
   left: 0;
   top: 0;
-  transition: width .4s, left 1s;
+  --TransitionWidthDuration: .4s;
+  --TransitionLeftDuration: .8s;
+  transition: width var(--TransitionWidthDuration), left var(--TransitionLeftDuration);
   z-index: 5;
 }
 
