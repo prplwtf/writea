@@ -4,7 +4,7 @@ async function FetchConfiguration() {
   if(window.location.hostname == "gravity.prpl.wtf") {
     ConfigurationURL = "./configuration/Configuration.example.yml"
   }
-  xhr.open("GET", "./configuration/Configuration.yml", true)
+  xhr.open("GET", ConfigurationURL, true)
   xhr.onreadystatechange = async function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var res = jsyaml.load(xhr.responseText)
