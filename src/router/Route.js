@@ -1,6 +1,4 @@
 function Route(view) {
-  if(!window.Configuration) {view = "#welcome"}
-  if(window.Configuration && view == "#welcome") {view = "#"}
   window.location.hash = view
   Unload("Section")
   ProgressBar(25)
@@ -26,14 +24,6 @@ function Route(view) {
   if(view == "#about") {
     return Import("./src/components/sections/AboutSection.js", "Section", function() {
       App.innerHTML = `${AboutSection()}`
-      ProgressBar(100)
-    })
-  }
-
-  // #welcome
-  if(view == "#welcome") {
-    return Import("./src/components/sections/WelcomeSection.js", "Section", function() {
-      App.innerHTML = `${WelcomeSection()}`
       ProgressBar(100)
     })
   }

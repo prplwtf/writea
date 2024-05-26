@@ -1,6 +1,6 @@
 var IsAnimating = false
 
-function ProgressBar(length) {
+function ProgressBar(length, duration) {
   if(IsAnimating) return;
 
   ProgressBarElement.style.opacity = 1
@@ -19,6 +19,7 @@ function ProgressBar(length) {
     return;
   }
 
-  ProgressBarElement.style.width = length+"%"
+  ProgressBarElement.style = `width: ${length}%; --TransitionWidthDuration: ${duration || 0.4}s;`
+
   IsAnimating = false
 }
