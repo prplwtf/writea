@@ -10,7 +10,7 @@ function BlogListSection() {
     if (Post.Thumbnail) {
       PostThumbnail = `
         <div class="col-12">
-          <img src="${Post.Thumbnail}"/>
+          <img src="${Post.Thumbnail}" class="col-12 rounded-2 mb-3 object-fit-cover" height="90px" width="100%"/>
         </div>
       `
     }

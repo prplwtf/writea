@@ -2,7 +2,7 @@ function RootSection() {
   return `
     ${NavigationBarElement()}
     <p>
-      ${window.Configuration.Application.Description || "no description provided"}
+      ${window.Configuration.Information.Description || "no description provided"}
     </p>
     <div class="row">
       ${ConnectionElement(

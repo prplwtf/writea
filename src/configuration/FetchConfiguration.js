@@ -1,4 +1,4 @@
-let ConfigurationURL = "./configuration/Configuration.yml"
+let ConfigurationURL = `./configuration/Configuration.yml?v=${Timestamp}`
 let ExampleConfiguration = false
 
 async function FetchConfiguration() {
@@ -12,9 +12,9 @@ async function FetchConfiguration() {
       return;
     }
     if (xhr.readyState == 4 && xhr.status == 404) {
-      if(ConfigurationURL != "./configuration/Configuration.example.yml") {
+      if(!ExampleConfiguration) {
         ExampleConfiguration = true
-        ConfigurationURL = "./configuration/Configuration.example.yml"
+        ConfigurationURL = `./configuration/Configuration.example.yml?v=${Timestamp}`
         FetchConfiguration()
       } else {
         await RenderConfiguration()

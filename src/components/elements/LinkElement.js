@@ -1,7 +1,7 @@
 function LinkElement() {
-  if(!window.Configuration.Application.Link) return;
+  if(!window.Configuration.Information.Link) return;
 
-  let Link = window.Configuration.Application.Link
+  let Link = window.Configuration.Information.Link
     .replace("http://", "")
     .replace("https://", "")
   

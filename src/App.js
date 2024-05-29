@@ -1,3 +1,4 @@
+var Timestamp = Math.round(Date.now() / 240000)
 document.addEventListener("DOMContentLoaded", (async () => {
   // Register global variables
   var App = document.getElementById("App")
@@ -14,5 +15,5 @@ document.addEventListener("DOMContentLoaded", (async () => {
     clearInterval(interval);
 
     Route(window.location.hash)
-  }, 10);
+  }, 10); 
 }))

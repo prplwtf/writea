@@ -1,4 +1,4 @@
-let BlogsURL = "./configuration/Posts.yml"
+let BlogsURL = `./configuration/Posts.yml?v=${Timestamp}`
 let ExampleBlogs = false
 
 async function FetchBlogs() {
@@ -11,9 +11,9 @@ async function FetchBlogs() {
       return;
     }
     if (xhr.readyState == 4 && xhr.status == 404) {
-      if(BlogsURL != "./configuration/Posts.example.yml") {
+      if(!ExampleBlogs) {
         ExampleBlogs = true
-        BlogsURL = "./configuration/Posts.example.yml"
+        BlogsURL = `./configuration/Posts.example.yml?v=${Timestamp}`
         FetchBlogs()
       } else {
         return console.error("Posts.yml could not be found!")

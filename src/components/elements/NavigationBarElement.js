@@ -16,8 +16,8 @@ function NavigationBarElement() {
     ${ConfigurationReminder}
     <div class="row mb-3">
       <div class="col me-auto">
-        <h3 class="fw-bolder text-danger-emphasis text-truncate" onclick="Route('#')" style='cursor: pointer;'>
-          ${window.Configuration.Application.Title || "gravity"}
+        <h3 class="fw-bolder text-danger-emphasis text-truncate mb-0 mt-2" onclick="Route('#')" style='cursor: pointer;'>
+          ${window.Configuration.Information.Title || "writea"}
         </h3>
       </div>
       <div class="col-auto">
