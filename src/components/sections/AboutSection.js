@@ -9,7 +9,7 @@ function AboutSection() {
       is a free, open-source and simplistic alternative for blogs
       - made with pure HTML and JavaScript.
     </p>
-    <a href="https://github.com/prplwtf/writea" target="_blank">
+    <a href="https://github.com/prplwtf/writea" target="_blank" class="text-danger">
       GitHub repository
     </a>
     ${FooterElement()}
