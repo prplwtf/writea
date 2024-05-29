@@ -1,5 +1,11 @@
-- Title: Introducing Gravity, a new way to write blogs.
+- Title: Introducing writea, a new way to write blogs.
   Description: Lorem ipsum or whatever
+  Topic: product release
+  Thumbnail: https://i.imgur.com/MAj12Va.jpg
+  Content: gravity-introduction.md 
 
 - Title: Meet Nebula - Pterodactyl takes flight!
   Description: I create stuff!
+  Topic: ad or something
+  Thumbnail:
+  Content: meet-nebula.md

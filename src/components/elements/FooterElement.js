@@ -1,9 +1,9 @@
 function FooterElement() {
   return `
-    <p class="mt-4 text-secondary opacity-50 text-center">
+    <p class="mt-4 text-secondary opacity-75 text-center">
       written with
       <span onclick='Route("#about")' class='text-danger-emphasis' style='cursor: pointer'>
-        gravity
+        <i class="bi bi-cup-hot-fill"></i> writea
       </span>
     </p>
   `
