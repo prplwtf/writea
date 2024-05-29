@@ -12,3 +12,7 @@
 #AppContainer {
   max-width: 650px;
 }
+
+code.hljs {
+  background-color: #0d0f10 !important;
+}

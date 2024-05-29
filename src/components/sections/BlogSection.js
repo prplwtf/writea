@@ -27,8 +27,8 @@ function BlogSection() {
     Posts = `
       ${Posts}
       
-      <div class="col-12 mb-3" style="cursor:pointer;" onclick="Route('#read/${Post.Content.replace('.md', '')}')">
-        <div class="border border-dark border-opacity-25 p-4 rounded-4">
+      <div class="col-12 mb-3" onclick="Route('#read/${Post.Content.replace('.md', '')}')">
+        <div class="border border-dark border-opacity-25 p-4 rounded-4" style="cursor:pointer;">
           <div class="row d-flex">
             ${PostThumbnail}
             <div class="col-10 me-auto">

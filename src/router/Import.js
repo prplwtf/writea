@@ -1,6 +1,5 @@
 function Import(url, id, callback) {
   if (document.getElementById(id)) {
-    console.warn(`Script with id "${id}" is already loaded.`);
     return;
   }
   

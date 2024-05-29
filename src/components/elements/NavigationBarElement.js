@@ -8,7 +8,11 @@ function NavigationBarElement() {
   if(ExampleConfiguration) {
     ConfigurationReminder = MissingConfigurationElement("Configuration.example.yml", "Configuration.yml")
   }
-  if(ExampleBlogs && window.location.hash == "#blog") {
+  if(ExampleBlogs && (
+    window.location.hash == "#blog" ||
+    window.location.hash == "#read" ||
+    window.location.hash.startsWith("#read/")
+  )) {
     ConfigurationReminder = MissingConfigurationElement("Posts.example.yml", "Posts.yml")
   }
   
@@ -24,6 +28,7 @@ function NavigationBarElement() {
         ${LinkElement()}
         <button type="button" class="btn ${ButtonClass} rounded-5" onclick="Route('#blog')">
           posts
+          <span class="ripple-surface"></span>
         </button>
       </div>
     </div>
