@@ -2,10 +2,19 @@
   Description: Lorem ipsum or whatever
   Topic: product release
   Thumbnail: writea.jpg
-  Content: gravity-introduction.md 
+  Content: gravity-introduction.md
+  Discoverable: true
 
 - Title: Meet Nebula - Pterodactyl takes flight!
   Description: I create stuff!
   Topic: ad or something
   Thumbnail:
   Content: meet-nebula.md
+  Discoverable: true
+
+- Title: Hidden post!
+  Description: very hidden
+  Topic: wee wooo wee wooo
+  Thumbnail:
+  Content: hidden-post.md
+  Discoverable: false

@@ -20,6 +20,14 @@ function Route(view) {
     })
   }
 
+  // #read
+  if(view == "#read" || view.startsWith("#read/")) {
+    return Import("./src/components/sections/ReadSection.js", "Section", function() {
+      App.innerHTML = `${ReadSection()}`
+      ProgressBar(100)
+    })
+  }
+
   // #about
   if(view == "#about") {
     return Import("./src/components/sections/AboutSection.js", "Section", function() {

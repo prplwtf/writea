@@ -4,8 +4,7 @@ async function ImportElements() {
 		{ Identifier: "FooterElement", Path: "FooterElement.js" },
 		{ Identifier: "LinkElement", Path: "LinkElement.js" },
 		{ Identifier: "ConnectionElement", Path: "ConnectionElement.js" },
-		{ Identifier: "MissingConfigurationElement", Path: "MissingConfigurationElement.js" },
-		{ Identifier: "BlogListElement", Path: "posts/BlogListElement.js" },
+		{ Identifier: "MissingConfigurationElement", Path: "MissingConfigurationElement.js" }
 	]
 
   for (let i = Elements.length - 1; i >= 0; i--) {
