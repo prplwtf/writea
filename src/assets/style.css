@@ -15,4 +15,6 @@
 
 code.hljs {
   background-color: #0d0f10 !important;
+  border: 1px solid #ffffff20;
+  border-radius: 8px;
 }

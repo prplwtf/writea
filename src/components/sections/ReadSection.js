@@ -29,6 +29,7 @@ async function ReadSection() {
       return response.text()
     })
     .then(content => {
+      content = RenderBlogFeatures(content)
       document.querySelector('#MarkdownContainer').innerHTML = marked.parse(content)
       hljs.highlightAll(document.getElementById('MarkdownContainer'))
     })
