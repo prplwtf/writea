@@ -18,21 +18,19 @@ function BlogSection() {
     let PostThumbnail = ""
     if (Post.Thumbnail) {
       PostThumbnail = `
-        <div class="col-12">
-          <img src="${Post.Thumbnail}" class="col-12 rounded-2 mb-3 object-fit-cover" height="90px" width="100%"/>
-        </div>
+        <img src="./thumbnails/${Post.Thumbnail}" class="rounded-top-4 object-fit-cover" height="110px" width="100%"/>
       `
     }
 
     Posts = `
       ${Posts}
       
-      <div class="col-12 mb-3" onclick="Route('#read/${Post.Content.replace('.md', '')}')">
-        <div class="border border-dark border-opacity-25 p-4 rounded-4" style="cursor:pointer;">
-          <div class="row d-flex">
-            ${PostThumbnail}
+      <div class="col-12 mb-4" onclick="Route('#read/${Post.Content.replace('.md', '')}')">
+        <div class="rounded-4 bg-dark-subtle" style="cursor:pointer;">
+          ${PostThumbnail}
+          <div class="row d-flex p-4">
             <div class="col-10 me-auto">
-              <span class="d-block text-danger-emphasis mb-1">
+              <span class="d-block text-primary-emphasis mb-1">
                 ${Post.Topic || "post"}
                 <span class="text-dark"><i class="bi bi-dot"></i> ${Post.Content}</span>
               </span>
@@ -44,7 +42,7 @@ function BlogSection() {
               </span>
             </div>
             <div class="col-auto my-auto">
-              <button type="button" class="btn shadow-none text-danger-emphasis"><i class="bi bi-chevron-right"></i></button>
+              <button type="button" class="btn shadow-none text-primary-emphasis"><i class="bi bi-chevron-right"></i></button>
             </div>
           </div>
         </div>
@@ -53,7 +51,7 @@ function BlogSection() {
   });
   return `
     ${NavigationBarElement()}
-    <div class="row">
+    <div class="row pt-2">
       ${Posts || `
         <p>
           There haven't been any posts yet, check back later!

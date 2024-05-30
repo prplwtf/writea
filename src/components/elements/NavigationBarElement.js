@@ -1,7 +1,7 @@
 function NavigationBarElement() {
   let ButtonClass = "btn-dark"
   if(window.location.hash != "#blog") {
-    ButtonClass = "btn-danger"
+    ButtonClass = "btn-primary"
   }
 
   let ConfigurationReminder = ""
@@ -20,7 +20,7 @@ function NavigationBarElement() {
     ${ConfigurationReminder}
     <div class="row mb-3">
       <div class="col me-auto">
-        <h3 class="fw-bolder text-danger-emphasis text-truncate mb-0 mt-2" onclick="Route('#')" style='cursor: pointer;'>
+        <h3 class="fw-bolder text-primary-emphasis text-truncate mb-0 mt-2" onclick="Route('#')" style='cursor: pointer;'>
           ${window.Configuration.Information.Title || "writea"}
         </h3>
       </div>

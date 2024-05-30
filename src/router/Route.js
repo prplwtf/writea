@@ -27,9 +27,9 @@ async function Route(view) {
   // #read
   if(view == "#read" || view.startsWith("#read/")) {
     return Import("./src/components/sections/ReadSection.js", "Section", async function() {
+      ProgressBar(65)
       App.innerHTML = `${await ReadSection()}`
       Effects()
-      ProgressBar(100)
     })
   }
 

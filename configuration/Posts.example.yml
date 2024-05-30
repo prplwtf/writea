@@ -1,6 +1,13 @@
 - Title: test
   Description: Lorem ipsum or whatever
   Topic: product release
-  Thumbnail: writea.jpg
+  Thumbnail: meet-writea.jpg
+  Content: meet-writea.md
+  Discoverable: true
+
+- Title: test
+  Description: Lorem ipsum or whatever
+  Topic: product release
+  Thumbnail:
   Content: meet-writea.md
   Discoverable: true

@@ -2,3 +2,5 @@ configuration/Configuration.yml
 configuration/Posts.yml
 posts/*
 !posts/meet-writea.md
+thumbnails/*
+!thumbnails/meet-writea.jpg

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", (async () => {
   // Register global variables
   var App = document.getElementById("App")
   var AppTitle = document.getElementById("AppTitle")
+  var AppTheme = document.getElementById("AppTheme")
   var ProgressBarElement = document.getElementById("ProgressBarElement")
 
   // Import components

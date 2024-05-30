@@ -1,0 +1,138 @@
+/* 
+ * Default writea theme
+ *
+ * Original from https://github.com/materialstyle/materialstyle
+ * Modified by https://github.com/prplwtf
+ */
+
+:root {
+  color-scheme: dark;
+
+  --bs-body-color: #ced4da;
+  --bs-body-color-rgb: 206,212,218;
+  --bs-body-bg: #16191d;
+  --bs-body-bg-rgb: 22,25,29;
+  --bs-surface-color: #dee2e6;
+  --bs-surface-color-rgb: 222,226,230;
+  --bs-surface-bg: #212529;
+  --bs-surface-bg-rgb: 33,37,41;
+  --bs-surface-bg-hover: #25292d;
+
+  --bs-emphasis-color: #fff;
+  --bs-emphasis-color-rgb: 255,255,255;
+  --bs-muted-color: #868e96;
+  --bs-heading-color: inherit;
+
+  --bs-primary: #e87c86;
+  --bs-primary-hover: #ed969e;
+  --bs-primary-active: #efa3aa;
+  --bs-primary-subtle: #58151c;
+  --bs-primary-subtle-hover: #63181f;
+  --bs-primary-subtle-active: #842029;
+  --bs-primary-emphasis: #efa4ab;
+  --bs-primary-emphasis-hover: #ee9aa2;
+  --bs-primary-border-subtle: #842029;
+  --bs-primary-rgb: 232, 124, 134;
+  --bs-text-on-primary: #000000;
+
+  --bs-secondary: #a3a6a9;
+  --bs-secondary-rgb: 163,166,169;
+  --bs-secondary-hover: #b5b8ba;
+  --bs-secondary-active: #bfc1c3;
+  --bs-secondary-subtle: #2d2f31;
+  --bs-secondary-subtle-hover: #333537;
+  --bs-secondary-subtle-active: #44474a;
+  --bs-secondary-emphasis: #bfc1c4;
+  --bs-secondary-emphasis-hover: #b8bbbd;
+  --bs-text-on-secondary: #000;
+  --bs-secondary-border-subtle: #44474a;
+
+  --bs-tertiary: #e47aaf;
+  --bs-tertiary-rgb: 228,122,175;
+  --bs-tertiary-hover: #e995bf;
+  --bs-tertiary-active: #eca2c7;
+  --bs-tertiary-subtle: #561435;
+  --bs-tertiary-subtle-hover: #60173b;
+  --bs-tertiary-subtle-active: #801f4f;
+  --bs-tertiary-emphasis: #eda3c8;
+  --bs-tertiary-emphasis-hover: #eb99c2;
+  --bs-text-on-tertiary: #000;
+  --bs-tertiary-border-subtle: #801f4f;
+
+  --bs-success: #6ab190;
+  --bs-success-rgb: 106,177,144;
+  --bs-success-hover: #88c1a6;
+  --bs-success-active: #97c8b1;
+  --bs-success-subtle: #0a3622;
+  --bs-success-subtle-hover: #0b3d26;
+  --bs-success-subtle-active: #0f5132;
+  --bs-success-emphasis: #98c9b2;
+  --bs-success-emphasis-hover: #8cc3aa;
+  --bs-text-on-success: #000;
+  --bs-success-border-subtle: #0f5132;
+
+  --bs-info: #62ddf5;
+  --bs-info-rgb: 98,221,245;
+  --bs-info-hover: #81e4f7;
+  --bs-info-active: #91e7f8;
+  --bs-info-subtle: #055160;
+  --bs-info-subtle-hover: #065b6c;
+  --bs-info-subtle-active: #087990;
+  --bs-info-emphasis: #92e7f8;
+  --bs-info-emphasis-hover: #86e5f8;
+  --bs-text-on-info: #000;
+  --bs-info-border-subtle: #087990;
+
+  --bs-warning: #ffd75e;
+  --bs-warning-rgb: 255,215,94;
+  --bs-warning-hover: #ffdf7e;
+  --bs-warning-active: #ffe38e;
+  --bs-warning-subtle: #664d03;
+  --bs-warning-subtle-hover: #735703;
+  --bs-warning-subtle-active: #997404;
+  --bs-warning-emphasis: #ffe38f;
+  --bs-warning-emphasis-hover: #ffe083;
+  --bs-text-on-warning: #000;
+  --bs-warning-border-subtle: #997404;
+
+  --bs-danger: #e87c86;
+  --bs-danger-rgb: 232,124,134;
+  --bs-danger-hover: #ed969e;
+  --bs-danger-active: #efa3aa;
+  --bs-danger-subtle: #58151c;
+  --bs-danger-subtle-hover: #63181f;
+  --bs-danger-subtle-active: #842029;
+  --bs-danger-emphasis: #efa4ab;
+  --bs-danger-emphasis-hover: #ee9aa2;
+  --bs-text-on-danger: #000;
+  --bs-danger-border-subtle: #842029;
+
+  --bs-light: #fafbfc;
+  --bs-light-rgb: 250,251,252;
+  --bs-light-hover: #fbfcfd;
+  --bs-light-active: #fcfcfd;
+  --bs-light-subtle: #636464;
+  --bs-light-subtle-hover: #707071;
+  --bs-light-subtle-active: #959596;
+  --bs-light-emphasis: #fcfcfd;
+  --bs-light-emphasis-hover: #fcfcfd;
+  --bs-text-on-light: #000;
+  --bs-light-border-subtle: #959596;
+
+  --bs-dark: #6f7174;
+  --bs-dark-rgb: 111,113,116;
+  --bs-dark-hover: #595a5d;
+  --bs-dark-active: #4e4f51;
+  --bs-dark-subtle: #0d0f10;
+  --bs-dark-subtle-hover: #0f1112;
+  --bs-dark-subtle-active: #141619;
+  --bs-dark-emphasis: #9b9d9f;
+  --bs-dark-emphasis-hover: #909294;
+  --bs-text-on-dark: #fff;
+  --bs-dark-border-subtle: #141619;
+
+  --bs-border-color: #495057;
+  --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+  --bs-border-radius: 1rem;
+  --bs-border-width: 1px;
+}

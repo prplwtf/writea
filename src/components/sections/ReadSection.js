@@ -10,7 +10,7 @@ async function ReadSection() {
   let PostThumbnail = ""
   if(Post.Thumbnail) {
     PostThumbnail = `
-      <img src="${Post.Thumbnail}" class="col-12 rounded-2 mb-5 object-fit-cover" height="170px" width="100%"/>
+      <img src="./thumbnails/${Post.Thumbnail}" class="rounded-top-4 mb-5 object-fit-cover" height="170px" width="100%"/>
     `
   }
 
@@ -32,6 +32,7 @@ async function ReadSection() {
       content = RenderBlogFeatures(content)
       document.querySelector('#MarkdownContainer').innerHTML = marked.parse(content)
       hljs.highlightAll(document.getElementById('MarkdownContainer'))
+      ProgressBar(100)
     })
     .catch(error => {
       console.error('Error fetching the Markdown content:', error)
@@ -39,23 +40,26 @@ async function ReadSection() {
 
   return `
     ${NavigationBarElement()}
-    <div class="py-4 text-center">
+    <div class="pt-2"></div>
+    <div class="pb-4 bg-dark-subtle rounded-4">
       ${PostThumbnail}
-      <p class="mb-3 text-danger-emphasis">
-        ${Post.Topic || "post"}
-        <span class="text-dark">
-          <i class="bi bi-slash"></i>
-          ${Visibility}
-        </span>
-      </p>
-      <p class="h2 fw-bolder mb-3">
-        ${Post.Title || "No title available"}
-      </p>
-      <p class="opacity-75">
-        ${Post.Description || "No description available"}
+      <div class="px-5 mb-4">
+        <p class="mb-1 text-primary-emphasis">
+          ${Post.Topic || "post"}
+          <span class="text-dark">
+            <i class="bi bi-slash"></i>
+            ${Visibility}
+          </span>
+        </p>
+        <p class="h2 fw-bolder mb-1">
+          ${Post.Title || "No title available"}
+        </p>
+        <p class="opacity-75">
+          ${Post.Description || "No description available"}
+        </div>
       </div>
     </div>
-    <div class="bg-dark-subtle rounded-4 p-5 mt-3">
+    <div class="p-xs-0 p-sm-5 py-5">
       <div id="MarkdownContainer"></div>
     </div>
     ${FooterElement()}
