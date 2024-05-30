@@ -10,15 +10,13 @@ async function ReadSection() {
   let PostThumbnail = ""
   if(Post.Thumbnail) {
     PostThumbnail = `
-      <img src="./thumbnails/${Post.Thumbnail}" class="rounded-top-4 mb-5 object-fit-cover" height="170px" width="100%"/>
+      <img src="./thumbnails/${Post.Thumbnail}" class="rounded-top-4 object-fit-cover" height="170px" width="100%"/>
     `
   }
 
   let Visibility = ""
   if(!Post.Discoverable) {
-    Visibility = `private`
-  } else {
-    Visibility = `public`
+    Visibility = `<i class="bi bi-link"></i> unlisted`
   }
 
   fetch(PostContentPath)
@@ -29,9 +27,11 @@ async function ReadSection() {
       return response.text()
     })
     .then(content => {
-      content = RenderBlogFeatures(content)
-      document.querySelector('#MarkdownContainer').innerHTML = marked.parse(content)
+      content = PreRenderBlogFeatures(content)
+      let MarkdownContainer = document.getElementById('MarkdownContainer')
+      MarkdownContainer.innerHTML = marked.parse(content)
       hljs.highlightAll(document.getElementById('MarkdownContainer'))
+      MarkdownContainer.innerHTML = PostRenderBlogFeatures(MarkdownContainer.innerHTML)
       ProgressBar(100)
     })
     .catch(error => {
@@ -43,11 +43,10 @@ async function ReadSection() {
     <div class="pt-2"></div>
     <div class="pb-4 bg-dark-subtle rounded-4">
       ${PostThumbnail}
-      <div class="px-5 mb-4">
+      <div class="px-5 mb-4 pt-5">
         <p class="mb-1 text-primary-emphasis">
           ${Post.Topic || "post"}
-          <span class="text-dark">
-            <i class="bi bi-slash"></i>
+          <span class="d-none d-sm-block text-dark float-end">
             ${Visibility}
           </span>
         </p>

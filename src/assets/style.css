@@ -13,6 +13,8 @@
   max-width: 650px;
 }
 
+.ripple-surface::before { transition: opacity 150ms ease-in,background-color 150ms ease-in; }
+
 /* markdown styling */
 #MarkdownContainer code.hljs {
   background-color: var(--bs-body-bg) !important;

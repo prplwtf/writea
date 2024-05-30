@@ -35,11 +35,10 @@ function LinkElement() {
   }
 
   return `
-    <button class="btn shadow-none px-0 rounded-0 me-3">
-      <i
-        class="bi bi-${LinkIcon} text-primary-emphasis" style="font-size:${LinkIconSize}px; cursor:pointer;"
-        onclick="window.location = 'http://${Link}'"
-      ></i>
-    </button>
+    <a href="http://${Link}" class="text-decoration-none">
+      <button class="btn shadow-none px-0 rounded-0 me-3">
+        <i class="bi bi-${LinkIcon} text-primary-emphasis" style="font-size:${LinkIconSize}px;"></i>
+      </button>
+    </a>
   `
 }

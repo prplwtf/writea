@@ -20,16 +20,20 @@ function NavigationBarElement() {
     ${ConfigurationReminder}
     <div class="row mb-3">
       <div class="col me-auto">
-        <h3 class="fw-bolder text-primary-emphasis text-truncate mb-0 mt-2" onclick="Route('#')" style='cursor: pointer;'>
-          ${window.Configuration.Information.Title || "writea"}
-        </h3>
+        <a href="#" class="text-decoration-none">
+          <h3 class="fw-bolder text-primary-emphasis text-truncate mb-0 mt-2">
+            ${window.Configuration.Information.Title || "writea"}
+          </h3>
+        </a>
       </div>
       <div class="col-auto">
         ${LinkElement()}
-        <button type="button" class="btn ${ButtonClass} rounded-5" onclick="Route('#blog')">
-          posts
-          <span class="ripple-surface"></span>
-        </button>
+        <a href="#blog">
+          <button type="button" class="btn ${ButtonClass} rounded-5">
+            posts
+            <span class="ripple-surface"></span>
+          </button>
+        </a>
       </div>
     </div>
   `

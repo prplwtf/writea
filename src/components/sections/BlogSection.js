@@ -25,27 +25,30 @@ function BlogSection() {
     Posts = `
       ${Posts}
       
-      <div class="col-12 mb-4" onclick="Route('#read/${Post.Content.replace('.md', '')}')">
-        <div class="rounded-4 bg-dark-subtle" style="cursor:pointer;">
-          ${PostThumbnail}
-          <div class="row d-flex p-4">
-            <div class="col-10 me-auto">
-              <span class="d-block text-primary-emphasis mb-1">
-                ${Post.Topic || "post"}
-                <span class="text-dark"><i class="bi bi-dot"></i> ${Post.Content}</span>
-              </span>
-              <span class="h5 fw-bold">
-                ${Post.Title || "No title available"}
-              </span>
-              <span class="d-block">
-                ${Post.Description || "No description available"}
-              </span>
-            </div>
-            <div class="col-auto my-auto">
-              <button type="button" class="btn shadow-none text-primary-emphasis"><i class="bi bi-chevron-right"></i></button>
-            </div>
+      <div class="col-12 mb-4">
+        <a href="#read/${Post.Content.replace('.md', '')}" class="text-decoration-none text-body">
+          <div class="rounded-4 bg-dark-subtle position-relative" style="--mdc-ripple-hover-opacity: .02; --mdc-ripple-focus-opacity: .02; --mdc-ripple-press-opacity: .05;">
+            ${PostThumbnail}
+            <div class="row d-flex p-4">
+              <div class="col-10 me-auto">
+                <span class="d-block text-primary-emphasis mb-1">
+                  ${Post.Topic || "post"}
+                  <span class="text-dark"><i class="bi bi-dot"></i> ${Post.Content}</span>
+                </span>
+                <span class="h5 fw-bold">
+                  ${Post.Title || "No title available"}
+                </span>
+                <span class="d-block">
+                  ${Post.Description || "No description available"}
+                </span>
+              </div>
+              <div class="col-auto my-auto">
+                <button type="button" class="btn shadow-none text-primary-emphasis"><i class="bi bi-chevron-right"></i></button>
+              </div>
+              </div>
+            <span class="ripple-surface"></span>
           </div>
-        </div>
+        </a>
       </div>
     `
   });
