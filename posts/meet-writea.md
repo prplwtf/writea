@@ -1,12 +1,15 @@
-efhwehiuewhiuweh
+# :coffee:
+**writea** is a blog website where you write blogs with markdown!
 
-```yml
-- Title: test
-  Description: Lorem ipsum or whatever
-  Topic: product release
-  Thumbnail: writea.jpg
-  Content: meet-writea.md
-  Discoverable: true
+**(tw)emoji rendering out-of-the-box:**\
+:tada\: :tada: ,\
+:sob\: :sob: ,\
+..and so on
+
+**syntax highlighting for codeblocks:**
+```md
+**Hello**, [world](example.com)!
 ```
 
-:sob:
+**and much more..**\
+which you can find on the [writea github repo](https://github.com/prplwtf/writea)!
