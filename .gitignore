@@ -1,6 +1,9 @@
-configuration/Configuration.yml
-configuration/Posts.yml
+# Ignore config files
+configuration/*
+!configuration/*.example.*
+
+# Ignore posts and images
 posts/*
+images/*
 !posts/meet-writea.md
-thumbnails/*
-!thumbnails/meet-writea.jpg
+!images/meet-writea.jpg
