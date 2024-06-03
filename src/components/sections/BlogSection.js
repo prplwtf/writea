@@ -18,7 +18,7 @@ function BlogSection() {
     let PostThumbnail = ""
     if (Post.Thumbnail) {
       PostThumbnail = `
-        <img src="./thumbnails/${Post.Thumbnail}" class="rounded-top-4 object-fit-cover" height="110px" width="100%"/>
+        <img src="./images/${Post.Thumbnail}" class="rounded-top-4 object-fit-cover" height="110px" width="100%"/>
       `
     }
 
