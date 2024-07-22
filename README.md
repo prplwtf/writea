@@ -21,4 +21,4 @@ Writea has support for a bunch of nifty features which include (but is not limit
 • Markdown formatting in blog posts.\
 • Built-in theme support.\
 • Configuration is stored in YaML files.\
-• Emoji convertion (\:sob: -> :sob:).
+• Emoji convertion (\:sob: -> 😭).
