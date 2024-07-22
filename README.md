@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/3ecf4567-5c93-44ac-9316-b282f4fe02fb)![image](https://github.com/user-attachments/assets/41fd53fe-36b9-443f-8b41-b5b6131e67a2)![writea](https://github.com/prplwtf/writea/assets/103201875/8bd298e3-036f-40d5-8183-46b651299761)
-
 <p align="center">
   Fast and comfy open-source alternative for blogs.
   Write posts with ✏️ <b>Markdown</b>,
