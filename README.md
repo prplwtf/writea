@@ -1,4 +1,4 @@
-![writea](https://github.com/prplwtf/writea/assets/103201875/8bd298e3-036f-40d5-8183-46b651299761)
+![image](https://github.com/user-attachments/assets/3ecf4567-5c93-44ac-9316-b282f4fe02fb)![image](https://github.com/user-attachments/assets/41fd53fe-36b9-443f-8b41-b5b6131e67a2)![writea](https://github.com/prplwtf/writea/assets/103201875/8bd298e3-036f-40d5-8183-46b651299761)
 
 <p align="center">
   Fast and comfy open-source alternative for blogs.
@@ -14,8 +14,12 @@
   $\Huge{\textsf{☕ Introduction}}$
 </p>
 
-$\color{#efa4ab}{\textsf{Writea}}$ is a blog website made with HTML and JavaScript.
+$\color{#efa4ab}{\textsf{Writea}}$ is a blog website made with HTML and Javascript.
 Because of this, writea is completely serverless!
+Just throw it into your web server of choice and it should just work.
 
-$\color{#58A6FF}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize Note}$
-`README.md` hasn't been fully written yet!
+Writea has support for a bunch of nifty features which include (but is not limited to):\
+• Markdown formatting in blog posts.\
+• Built-in theme support.\
+• Configuration is stored in YaML files.\
+• Emoji convertion (\:sob: -> :sob:).
