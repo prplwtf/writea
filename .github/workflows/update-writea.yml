@@ -36,9 +36,8 @@ jobs:
           [ -d images/ ] && git checkout HEAD -- images/
           [ -d themes/ ] && git checkout HEAD -- themes/
           [ -f CNAME ] && git checkout HEAD -- CNAME
+          [ -f README.md ] && git checkout HEAD -- README.md
           git rm --cached themes/Default.css || true
-          git rm --cached README.md || true
-          git rm --cached LICENSE || true
 
       - name: Commit changes
         run: |
@@ -48,3 +47,6 @@ jobs:
       - name: Push changes
         run: |
           git push origin main
+
+permissions:
+  contents: write
