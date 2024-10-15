@@ -30,13 +30,12 @@ jobs:
 
       - name: Restore specific files and directories
         run: |
-          # Restore the specified files and directories
-          git checkout HEAD -- configuration/Posts.yml
-          git checkout HEAD -- configuration/Configuration.yml
-          git checkout HEAD -- posts/
-          git checkout HEAD -- images/
-          git checkout HEAD -- themes/
-          git checkout HEAD -- CNAME
+          [ -f configuration/Posts.yml ] && git checkout HEAD -- configuration/Posts.yml
+          [ -f configuration/Configuration.yml ] && git checkout HEAD -- configuration/Configuration.yml
+          [ -d posts/ ] && git checkout HEAD -- posts/
+          [ -d images/ ] && git checkout HEAD -- images/
+          [ -d themes/ ] && git checkout HEAD -- themes/
+          [ -f CNAME ] && git checkout HEAD -- CNAME
           git rm --cached themes/Default.css || true
 
       - name: Commit changes
