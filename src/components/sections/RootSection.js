@@ -23,6 +23,12 @@ function RootSection() {
         window.Configuration.Connections.Twitter,
         Boolean(window.Configuration.Connections.Twitter || false)
       )}
+      ${ConnectionElement(
+        "mastodon",
+        `mastodon.social/@${window.Configuration.Connections.Mastodon}`,
+        window.Configuration.Connections.Mastodon,
+        Boolean(window.Configuration.Connections.Mastodon || false)
+      )}
     </div>
     ${FooterElement()}
   `
