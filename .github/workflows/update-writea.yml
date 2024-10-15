@@ -37,6 +37,8 @@ jobs:
           [ -d themes/ ] && git checkout HEAD -- themes/
           [ -f CNAME ] && git checkout HEAD -- CNAME
           git rm --cached themes/Default.css || true
+          git rm --cached README.md || true
+          git rm --cached LICENSE || true
 
       - name: Commit changes
         run: |
