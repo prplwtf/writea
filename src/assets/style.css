@@ -33,3 +33,14 @@
   transition: opacity .2s;
   opacity: 1;
 }
+
+#MarkdownContainer img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+blockquote {
+  border-left: 3px solid var(--bs-primary);
+  padding-left: 12px;
+  font-style: italic;
+}
