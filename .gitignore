@@ -1,9 +1,3 @@
-# Ignore config files
-configuration/*
-!configuration/*.example.*
-
-# Ignore posts and images
-posts/*
-images/*
-!posts/meet-writea.md
-!images/meet-writea.jpg
+.vscode
+.DS_Store
+MACOSX
