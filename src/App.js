@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", (async () => {
   var App = document.getElementById("App")
   var AppTitle = document.getElementById("AppTitle")
   var AppTheme = document.getElementById("AppTheme")
+  var AppColor = document.getElementById("AppColor")
   var ProgressBarElement = document.getElementById("ProgressBarElement")
 
   // Import components

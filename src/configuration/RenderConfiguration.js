@@ -7,6 +7,14 @@ async function RenderConfiguration() {
   fetch(ActiveTheme)
     .then(response => {
       if (!response.ok) {throw new Error(`Network response was not ok: ${response.status}`)}
+
+      let ComputedThemeConfig = getComputedStyle(document.querySelector("writea-theme-config"))
+      var ThemeConfig = {
+        "themeColor": ComputedThemeConfig.getPropertyValue('--theme-color')
+      }
+
+      AppColor.content = ThemeConfig.themeColor || "#E87C86"
+
       return AppTheme.innerHTML = `${response}`
     })
   return;

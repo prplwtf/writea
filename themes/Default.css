@@ -5,6 +5,10 @@
  * Modified by https://github.com/prplwtf
  */
 
+writea-theme-config {
+  --theme-color: #e87c86;
+}
+
 :root {
   color-scheme: dark;
 

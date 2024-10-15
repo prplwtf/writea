@@ -8,9 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="./src/assets/favicon.ico">
-    <meta content="#E87C86" data-react-helmet="true" name="theme-color" />
-    <meta content="fast, comfy and open-source alternative for blogs" property="og:description" />
-    <meta content="./src/assets/embed.png" property="og:image" />
+    <meta name="theme-color" content="#E87C86" id="AppColor"/>
+    <meta property="og:description" content="fast, comfy and open-source alternative for blogs"/>
+    <meta property="og:image" content="/src/assets/embed.png"/>
 
     <!-- Scripts and stylesheets -->
     <link href="./src/vendor/css/materialstyle.min.css" rel="stylesheet">
@@ -46,6 +46,8 @@
     <div class="container py-5" id="AppContainer">
       <div id="App"></div>
     </div>
+
+    <writea-theme-config></writea-theme-config>
 
   </body>
   <style id="AppTheme"></style>
