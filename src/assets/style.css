@@ -28,3 +28,8 @@
 [writea='read.header']:hover > [writea='read.header.thumbnail'] {
   height: 250px;
 }
+
+[writea='read.content'] {
+  transition: opacity .2s;
+  opacity: 1;
+}

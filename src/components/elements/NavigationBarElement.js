@@ -22,6 +22,7 @@ function NavigationBarElement() {
       <div class="col me-auto">
         <a href="#" class="text-decoration-none">
           <h3 class="fw-bolder text-primary-emphasis text-truncate mb-0 mt-2">
+            ${window.Configuration.Information.Icon ? '<img src="./images/'+window.Configuration.Information.Icon+'" height="24px" class="mb-1 me-1" style="min-width: 24px"/>' : ''}
             ${window.Configuration.Information.Title || "writea"}
           </h3>
         </a>

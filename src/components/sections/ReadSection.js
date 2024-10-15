@@ -27,12 +27,18 @@ async function ReadSection() {
       return response.text()
     })
     .then(content => {
-      content = PreRenderBlogFeatures(content)
-      let MarkdownContainer = document.getElementById('MarkdownContainer')
-      MarkdownContainer.innerHTML = marked.parse(content)
-      hljs.highlightAll(document.getElementById('MarkdownContainer'))
-      MarkdownContainer.innerHTML = PostRenderBlogFeatures(MarkdownContainer.innerHTML)
-      ProgressBar(100)
+      setTimeout(() => {
+        document.querySelector('[writea="read.content"]').style.opacity = 0
+        setTimeout(() => {
+          content = PreRenderBlogFeatures(content)
+          let MarkdownContainer = document.getElementById('MarkdownContainer')
+          MarkdownContainer.innerHTML = marked.parse(content)
+          hljs.highlightAll(document.getElementById('MarkdownContainer'))
+          MarkdownContainer.innerHTML = PostRenderBlogFeatures(MarkdownContainer.innerHTML)
+          document.querySelector('[writea="read.content"]').style.opacity = 1
+          ProgressBar(100)
+        }, 225)
+      }, 200)
     })
     .catch(error => {
       console.error('Error fetching the Markdown content:', error)
@@ -59,7 +65,18 @@ async function ReadSection() {
       </div>
     </div>
     <div writea="read.content" class="p-xs-0 p-sm-5 py-5">
-      <div id="MarkdownContainer"></div>
+      <div id="MarkdownContainer">
+        <p class="placeholder-wave">
+          <span class="opacity-25 placeholder col-12 rounded-pill"></span>
+          <span class="opacity-25 placeholder col-11 rounded-pill"></span>
+          <span class="opacity-25 placeholder col-11 rounded-pill"></span>
+          <span class="opacity-25 placeholder col-10 rounded-pill"></span>
+          <span class="opacity-25 placeholder col-10 rounded-pill"></span>
+          <span class="opacity-25 placeholder col-9 rounded-pill"></span>
+          <span class="opacity-25 placeholder col-9 rounded-pill"></span>
+          <span class="opacity-25 placeholder col-8 rounded-pill"></span>
+        </p>
+      </div>
     </div>
     ${FooterElement()}
   `
