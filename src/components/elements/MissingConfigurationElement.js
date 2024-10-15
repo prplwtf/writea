@@ -1,6 +1,6 @@
 function MissingConfigurationElement(OldConfiguration, NewConfiguration) {
   return `
-    <div class="row pb-4">
+    <div writea="element.missingconfig" class="row pb-4">
       <div class="col-6">
         <div class="bg-dark-subtle rounded-4 py-2 px-3">
           <p class="m-0 text-center">

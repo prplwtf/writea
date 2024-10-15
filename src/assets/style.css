@@ -21,3 +21,10 @@
   border: 1px solid var(--bs-border-color);
   border-radius: 12px;
 }
+
+[writea='read.header.thumbnail'] {
+  transition: height .3s;
+}
+[writea='read.header']:hover > [writea='read.header.thumbnail'] {
+  height: 250px;
+}

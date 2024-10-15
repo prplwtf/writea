@@ -2,7 +2,7 @@ function ConnectionElement(Icon, Link, Username, Defined) {
   if(!Defined) return ""
 
   return `
-  <div class="col py-2">
+  <div writea="element.connection" class="col py-2">
     <a href="https://${Link}" class="text-decoration-none">
         <div
           class="border border-dark border-opacity-25 py-2 px-3 rounded-4 position-relative" 

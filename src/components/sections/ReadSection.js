@@ -10,7 +10,7 @@ async function ReadSection() {
   let PostThumbnail = ""
   if(Post.Thumbnail) {
     PostThumbnail = `
-      <img src="./images/${Post.Thumbnail}" class="rounded-top-4 object-fit-cover" height="170px" width="100%"/>
+      <img src="./images/${Post.Thumbnail}" writea="read.header.thumbnail" class="rounded-top-4 object-fit-cover" height="200px" width="100%"/>
     `
   }
 
@@ -41,24 +41,24 @@ async function ReadSection() {
   return `
     ${NavigationBarElement()}
     <div class="pt-2"></div>
-    <div class="pb-4 bg-dark-subtle rounded-4">
+    <div writea="read.header" class="pb-4 bg-dark-subtle rounded-4">
       ${PostThumbnail}
       <div class="px-5 mb-4 pt-5">
-        <p class="mb-1 text-primary-emphasis">
+        <p writea="read.header.info" class="mb-1 text-primary-emphasis">
           ${Post.Topic || "post"}
           <span class="d-none d-sm-block text-dark float-end">
             ${Visibility}
           </span>
         </p>
-        <p class="h2 fw-bolder mb-1">
+        <p writea="read.header.title" class="h2 fw-bolder mb-1">
           ${Post.Title || "No title available"}
         </p>
-        <p class="opacity-75">
+        <p writea="read.header.description" class="opacity-75">
           ${Post.Description || "No description available"}
         </div>
       </div>
     </div>
-    <div class="p-xs-0 p-sm-5 py-5">
+    <div writea="read.content" class="p-xs-0 p-sm-5 py-5">
       <div id="MarkdownContainer"></div>
     </div>
     ${FooterElement()}

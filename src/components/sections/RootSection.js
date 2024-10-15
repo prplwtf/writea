@@ -1,10 +1,10 @@
 function RootSection() {
   return `
     ${NavigationBarElement()}
-    <p>
+    <p writea="root.description">
       ${window.Configuration.Information.Description || "no description provided"}
     </p>
-    <div class="row">
+    <div writea="root.connections" class="row">
       ${ConnectionElement(
         "github",
         `github.com/${window.Configuration.Connections.GitHub}`,

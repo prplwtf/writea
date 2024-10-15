@@ -35,7 +35,7 @@ function LinkElement() {
   }
 
   return `
-    <a href="http://${Link}" class="text-decoration-none">
+    <a writea="element.link" href="http://${Link}" class="text-decoration-none">
       <button class="btn shadow-none px-0 rounded-0 me-3">
         <i class="bi bi-${LinkIcon} text-primary-emphasis" style="font-size:${LinkIconSize}px;"></i>
       </button>

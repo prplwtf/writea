@@ -18,7 +18,7 @@ function NavigationBarElement() {
   
   return `
     ${ConfigurationReminder}
-    <div class="row mb-3">
+    <div writea="element.navigation" class="row mb-3">
       <div class="col me-auto">
         <a href="#" class="text-decoration-none">
           <h3 class="fw-bolder text-primary-emphasis text-truncate mb-0 mt-2">

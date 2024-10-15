@@ -18,27 +18,27 @@ function BlogSection() {
     let PostThumbnail = ""
     if (Post.Thumbnail) {
       PostThumbnail = `
-        <img src="./images/${Post.Thumbnail}" class="rounded-top-4 object-fit-cover" height="110px" width="100%"/>
+        <img src="./images/${Post.Thumbnail}" writea="post.entry.thumbnail" class="rounded-top-4 object-fit-cover" height="110px" width="100%"/>
       `
     }
 
     Posts = `
       ${Posts}
       
-      <div class="col-12 mb-4">
+      <div writea="post.entry" class="col-12 mb-4">
         <a href="#read/${Post.Content.replace('.md', '')}" class="text-decoration-none text-body">
           <div class="rounded-4 bg-dark-subtle position-relative" style="--mdc-ripple-hover-opacity: .02; --mdc-ripple-focus-opacity: .02; --mdc-ripple-press-opacity: .05;">
             ${PostThumbnail}
             <div class="row d-flex p-4">
               <div class="col-10 me-auto">
-                <span class="d-block text-primary-emphasis mb-1">
+                <span writea="post.entry.info" class="d-block text-primary-emphasis mb-1">
                   ${Post.Topic || "post"}
                   <span class="text-dark"><i class="bi bi-dot"></i> ${Post.Content}</span>
                 </span>
-                <span class="h5 fw-bold">
+                <span writea="post.entry.title" class="h5 fw-bold">
                   ${Post.Title || "No title available"}
                 </span>
-                <span class="d-block">
+                <span writea="post.entry.description" class="d-block">
                   ${Post.Description || "No description available"}
                 </span>
               </div>
