@@ -3,6 +3,6 @@ function Unload(id) {
   if (script) {
     script.parentNode.removeChild(script);
   } else {
-    console.warn(`No script found with id "${id}".`);
+    return console.info(`Failed to unload script with id "${id}"`);
   }
 }

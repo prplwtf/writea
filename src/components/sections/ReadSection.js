@@ -3,6 +3,7 @@ async function ReadSection() {
   
   let PostContentFile = `${window.location.hash.replace("#read/", "")}.md`
   let Post = window.Blogs.find(item => item.Content === PostContentFile)
+  if(!Post) { return window.location = "#404" }
   let PostContentPath = `./posts/${Post.Content}`
 
   ModifyAppTitle(Post.Content.replace(".md", ""))

@@ -13,6 +13,7 @@ function Import(url, id, callback) {
 
   script.onerror = function() {
     console.error(`Failed to load script with id "${id}"`);
+    return Error();
   };
 
   script.src = url;

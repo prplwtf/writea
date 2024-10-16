@@ -43,9 +43,14 @@ async function Route(view) {
     })
   }
 
-  ModifyAppTitle()
-  ProgressBar(100)
-  return App.innerHTML = `An unknown error occured, check your browser console for more information.`
+  // #404
+  console.info(`View ${view} not found, returning 404.`)
+  return Import("./src/components/sections/NotfoundSection.js", "Section", function() {
+    App.innerHTML = `${NotfoundSection()}`
+    ModifyAppTitle("404")
+    Effects()
+    ProgressBar(100)
+  })
 }
 
 window.addEventListener("hashchange", function() {

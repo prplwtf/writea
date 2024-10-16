@@ -30,7 +30,7 @@ function NavigationBarElement() {
       <div class="col-auto">
         ${LinkElement()}
         <a href="#blog">
-          <button type="button" class="btn ${ButtonClass} rounded-5">
+          <button type="button" class="btn ${ButtonClass} rounded-pill">
             posts
             <span class="ripple-surface"></span>
           </button>

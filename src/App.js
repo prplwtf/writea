@@ -19,3 +19,9 @@ document.addEventListener("DOMContentLoaded", (async () => {
     Route(window.location.hash)
   }, 10); 
 }))
+
+function Error() {
+  ModifyAppTitle()
+  ProgressBar(100)
+  return App.innerHTML = `An unknown error occured, check your browser console for more information.`
+}
