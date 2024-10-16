@@ -5,6 +5,7 @@ on:
     branches: ["main"]
   workflow_run:
     workflows: ["Update writea"]
+    branches: ["main"]
     types:
       - completed
   workflow_dispatch:
