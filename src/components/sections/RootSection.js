@@ -18,6 +18,12 @@ function RootSection() {
         Boolean(window.Configuration.Connections.YouTube || false)
       )}
       ${ConnectionElement(
+        "dot",
+        `bsky.app/profile/${window.Configuration.Connections.Bluesky}`,
+        window.Configuration.Connections.Bluesky,
+        Boolean(window.Configuration.Connections.Bluesky || false)
+      )}
+      ${ConnectionElement(
         "twitter",
         `x.com/${window.Configuration.Connections.Twitter}`,
         window.Configuration.Connections.Twitter,
