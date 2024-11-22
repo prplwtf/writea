@@ -1,6 +1,7 @@
 var Timestamp = Math.round(Date.now() / 240000)
 document.addEventListener("DOMContentLoaded", (async () => {
   // Register global variables
+  var html = document.getElementById("html")
   var App = document.getElementById("App")
   var AppTitle = document.getElementById("AppTitle")
   var AppTheme = document.getElementById("AppTheme")
