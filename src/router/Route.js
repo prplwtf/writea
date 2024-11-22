@@ -3,6 +3,15 @@ async function Route(view) {
   Unload("Section")
   ProgressBar(25)
 
+  // Allow URLs ending in a slash
+  if(view.endsWith('/')) {
+    let lastIndex = view.lastIndexOf('/');
+    view =
+      view.slice(0, lastIndex) +
+      '' +
+      view.slice(lastIndex + 1);
+  }
+
 
   // #
   if(view == "" || view == "#") {
@@ -44,7 +53,7 @@ async function Route(view) {
   }
 
   // #404
-  console.info(`View ${view} not found, returning 404.`)
+  console.warn(`404: ${view} not found.`)
   return Import("./src/components/sections/NotfoundSection.js", "Section", function() {
     App.innerHTML = `${NotfoundSection()}`
     ModifyAppTitle("404")

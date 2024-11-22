@@ -31,7 +31,7 @@ function BlogSection() {
             <div class="rounded-4 bg-dark-subtle position-relative" style="--mdc-ripple-hover-opacity: .02; --mdc-ripple-focus-opacity: .02; --mdc-ripple-press-opacity: .05;">
               ${PostThumbnail}
               <div class="row d-flex p-4">
-                <div class="col-10 me-auto">
+                <div class="col-auto col-sm-10 me-auto">
                   <span writea="post.entry.info" class="d-block text-primary-emphasis mb-1">
                     ${Post.Topic || "post"}
                     <span class="text-dark"><i class="bi bi-dot"></i> ${Post.Content}</span>
@@ -43,7 +43,7 @@ function BlogSection() {
                     ${Post.Description || "No description available"}
                   </span>
                 </div>
-                <div class="col-auto my-auto">
+                <div class="col-auto my-auto d-none d-sm-block">
                   <button type="button" class="btn shadow-none text-primary-emphasis"><i class="bi bi-chevron-right"></i></button>
                 </div>
                 </div>
