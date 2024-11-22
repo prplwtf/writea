@@ -18,7 +18,7 @@ function RootSection() {
         Boolean(window.Configuration.Connections.YouTube || false)
       )}
       ${ConnectionElement(
-        "dot",
+        "custom:bluesky",
         `bsky.app/profile/${window.Configuration.Connections.Bluesky}`,
         window.Configuration.Connections.Bluesky,
         Boolean(window.Configuration.Connections.Bluesky || false)
