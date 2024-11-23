@@ -12,10 +12,10 @@ function RootSection() {
         Boolean(window.Configuration.Connections.GitHub || false)
       )}
       ${ConnectionElement(
-        "youtube",
-        `youtube.com/@${window.Configuration.Connections.YouTube}`,
-        window.Configuration.Connections.YouTube,
-        Boolean(window.Configuration.Connections.YouTube || false)
+        "gitlab",
+        `gitlab.com/${window.Configuration.Connections.GitLab}`,
+        window.Configuration.Connections.GitLab,
+        Boolean(window.Configuration.Connections.GitLab || false)
       )}
       ${ConnectionElement(
         "custom:bluesky",
@@ -34,6 +34,24 @@ function RootSection() {
         `mastodon.social/@${window.Configuration.Connections.Mastodon}`,
         window.Configuration.Connections.Mastodon,
         Boolean(window.Configuration.Connections.Mastodon || false)
+      )}
+      ${ConnectionElement(
+        "medium",
+        `medium.com/@${window.Configuration.Connections.Medium}`,
+        window.Configuration.Connections.Medium,
+        Boolean(window.Configuration.Connections.Medium || false)
+      )}
+      ${ConnectionElement(
+        "twitch",
+        `twitch.tv/${window.Configuration.Connections.Twitch}`,
+        window.Configuration.Connections.Twitch,
+        Boolean(window.Configuration.Connections.Twitch || false)
+      )}
+      ${ConnectionElement(
+        "youtube",
+        `youtube.com/@${window.Configuration.Connections.YouTube}`,
+        window.Configuration.Connections.YouTube,
+        Boolean(window.Configuration.Connections.YouTube || false)
       )}
     </div>
     ${FooterElement()}
