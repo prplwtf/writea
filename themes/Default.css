@@ -1,8 +1,6 @@
 /* 
  * Default writea theme
- *
  * Original from https://github.com/materialstyle/materialstyle
- * Modified by https://github.com/prplwtf
  */
 
 writea-theme-config {
@@ -13,17 +11,17 @@ writea-theme-config {
   color-scheme: dark;
 
   --bs-body-color: #ced4da;
-  --bs-body-color-rgb: 206,212,218;
+  --bs-body-color-rgb: 206, 212, 218;
   --bs-body-bg: #16191d;
-  --bs-body-bg-rgb: 22,25,29;
+  --bs-body-bg-rgb: 22, 25, 29;
   --bs-surface-color: #dee2e6;
-  --bs-surface-color-rgb: 222,226,230;
+  --bs-surface-color-rgb: 222, 226, 230;
   --bs-surface-bg: #212529;
-  --bs-surface-bg-rgb: 33,37,41;
+  --bs-surface-bg-rgb: 33, 37, 41;
   --bs-surface-bg-hover: #25292d;
 
   --bs-emphasis-color: #fff;
-  --bs-emphasis-color-rgb: 255,255,255;
+  --bs-emphasis-color-rgb: 255, 255, 255;
   --bs-muted-color: #868e96;
   --bs-heading-color: inherit;
 
@@ -40,7 +38,7 @@ writea-theme-config {
   --bs-text-on-primary: #000000;
 
   --bs-secondary: #a3a6a9;
-  --bs-secondary-rgb: 163,166,169;
+  --bs-secondary-rgb: 163, 166, 169;
   --bs-secondary-hover: #b5b8ba;
   --bs-secondary-active: #bfc1c3;
   --bs-secondary-subtle: #2d2f31;
@@ -52,7 +50,7 @@ writea-theme-config {
   --bs-secondary-border-subtle: #44474a;
 
   --bs-tertiary: #e47aaf;
-  --bs-tertiary-rgb: 228,122,175;
+  --bs-tertiary-rgb: 228, 122, 175;
   --bs-tertiary-hover: #e995bf;
   --bs-tertiary-active: #eca2c7;
   --bs-tertiary-subtle: #561435;
@@ -64,7 +62,7 @@ writea-theme-config {
   --bs-tertiary-border-subtle: #801f4f;
 
   --bs-success: #6ab190;
-  --bs-success-rgb: 106,177,144;
+  --bs-success-rgb: 106, 177, 144;
   --bs-success-hover: #88c1a6;
   --bs-success-active: #97c8b1;
   --bs-success-subtle: #0a3622;
@@ -76,7 +74,7 @@ writea-theme-config {
   --bs-success-border-subtle: #0f5132;
 
   --bs-info: #62ddf5;
-  --bs-info-rgb: 98,221,245;
+  --bs-info-rgb: 98, 221, 245;
   --bs-info-hover: #81e4f7;
   --bs-info-active: #91e7f8;
   --bs-info-subtle: #055160;
@@ -88,7 +86,7 @@ writea-theme-config {
   --bs-info-border-subtle: #087990;
 
   --bs-warning: #ffd75e;
-  --bs-warning-rgb: 255,215,94;
+  --bs-warning-rgb: 255, 215, 94;
   --bs-warning-hover: #ffdf7e;
   --bs-warning-active: #ffe38e;
   --bs-warning-subtle: #664d03;
@@ -100,7 +98,7 @@ writea-theme-config {
   --bs-warning-border-subtle: #997404;
 
   --bs-danger: #e87c86;
-  --bs-danger-rgb: 232,124,134;
+  --bs-danger-rgb: 232, 124, 134;
   --bs-danger-hover: #ed969e;
   --bs-danger-active: #efa3aa;
   --bs-danger-subtle: #58151c;
@@ -112,7 +110,7 @@ writea-theme-config {
   --bs-danger-border-subtle: #842029;
 
   --bs-light: #fafbfc;
-  --bs-light-rgb: 250,251,252;
+  --bs-light-rgb: 250, 251, 252;
   --bs-light-hover: #fbfcfd;
   --bs-light-active: #fcfcfd;
   --bs-light-subtle: #636464;
@@ -124,7 +122,7 @@ writea-theme-config {
   --bs-light-border-subtle: #959596;
 
   --bs-dark: #6f7174;
-  --bs-dark-rgb: 111,113,116;
+  --bs-dark-rgb: 111, 113, 116;
   --bs-dark-hover: #595a5d;
   --bs-dark-active: #4e4f51;
   --bs-dark-subtle: #0d0f10;

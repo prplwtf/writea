@@ -1,11 +1,9 @@
 /* 
  * Catppuccin Mocha writea theme
- *
  * Colors from https://catppuccin.com
- * Ported by https://github.com/prplwtf
  */
 
- writea-theme-config {
+writea-theme-config {
   --theme-color: #cba6f7;
 }
 
@@ -13,17 +11,17 @@
   color-scheme: dark;
 
   --bs-body-color: #ced4da;
-  --bs-body-color-rgb: 206,212,218;
+  --bs-body-color-rgb: 206, 212, 218;
   --bs-body-bg: #11111b;
-  --bs-body-bg-rgb: 22,25,29;
+  --bs-body-bg-rgb: 22, 25, 29;
   --bs-surface-color: #dee2e6;
-  --bs-surface-color-rgb: 222,226,230;
+  --bs-surface-color-rgb: 222, 226, 230;
   --bs-surface-bg: #212529;
-  --bs-surface-bg-rgb: 33,37,41;
+  --bs-surface-bg-rgb: 33, 37, 41;
   --bs-surface-bg-hover: #25292d;
 
   --bs-emphasis-color: #fff;
-  --bs-emphasis-color-rgb: 255,255,255;
+  --bs-emphasis-color-rgb: 255, 255, 255;
   --bs-muted-color: #868e96;
   --bs-heading-color: inherit;
 
@@ -40,7 +38,7 @@
   --bs-text-on-primary: #000000;
 
   --bs-dark: #45475a;
-  --bs-dark-rgb: 111,113,116;
+  --bs-dark-rgb: 111, 113, 116;
   --bs-dark-hover: #585b70;
   --bs-dark-active: #6c7086;
   --bs-dark-subtle: #1e1e2e;

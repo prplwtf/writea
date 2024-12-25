@@ -1,0 +1,139 @@
+/* 
+ * Twilight Seafoam writea theme
+ */
+
+writea-theme-config {
+  --theme-color: #5fb3b3;
+}
+
+:root {
+  color-scheme: dark;
+
+  --bs-body-color: #e5e5e5;
+  --bs-body-color-rgb: 229, 229, 229;
+  --bs-body-bg: #0d1214;
+  --bs-body-bg-rgb: 13, 18, 20;
+  --bs-surface-color: #f0f0f0;
+  --bs-surface-color-rgb: 240, 240, 240;
+  --bs-surface-bg: #151b1d;
+  --bs-surface-bg-rgb: 21, 27, 29;
+  --bs-surface-bg-hover: #1a2124;
+
+  --bs-emphasis-color: #ffffff;
+  --bs-emphasis-color-rgb: 255, 255, 255;
+  --bs-muted-color: #94a3a7;
+  --bs-heading-color: inherit;
+
+  --bs-primary: #5fb3b3;
+  --bs-primary-hover: #7ac4c4;
+  --bs-primary-active: #8ccece;
+  --bs-primary-subtle: #1c3434;
+  --bs-primary-subtle-hover: #234141;
+  --bs-primary-subtle-active: #2d5252;
+  --bs-primary-emphasis: #8dcfcf;
+  --bs-primary-emphasis-hover: #82c8c8;
+  --bs-primary-border-subtle: #2d5252;
+  --bs-primary-rgb: 95, 179, 179;
+  --bs-text-on-primary: #000000;
+
+  --bs-secondary: #e8a5b9;
+  --bs-secondary-rgb: 232, 165, 185;
+  --bs-secondary-hover: #edb7c7;
+  --bs-secondary-active: #f0c2d0;
+  --bs-secondary-subtle: #442d34;
+  --bs-secondary-subtle-hover: #4e353d;
+  --bs-secondary-subtle-active: #66444f;
+  --bs-secondary-emphasis: #f1c3d1;
+  --bs-secondary-emphasis-hover: #eebccc;
+  --bs-text-on-secondary: #000000;
+  --bs-secondary-border-subtle: #66444f;
+
+  --bs-tertiary: #91c7d1;
+  --bs-tertiary-rgb: 145, 199, 209;
+  --bs-tertiary-hover: #a6d3db;
+  --bs-tertiary-active: #b1d9e0;
+  --bs-tertiary-subtle: #2a3b3e;
+  --bs-tertiary-subtle-hover: #324548;
+  --bs-tertiary-subtle-active: #415b5f;
+  --bs-tertiary-emphasis: #b2dae1;
+  --bs-tertiary-emphasis-hover: #aad5dd;
+  --bs-text-on-tertiary: #000000;
+  --bs-tertiary-border-subtle: #415b5f;
+
+  --bs-success: #7ac4a6;
+  --bs-success-rgb: 122, 196, 166;
+  --bs-success-hover: #92d0b8;
+  --bs-success-active: #9ed5c1;
+  --bs-success-subtle: #243a31;
+  --bs-success-subtle-hover: #2a4439;
+  --bs-success-subtle-active: #365749;
+  --bs-success-emphasis: #9fd6c2;
+  --bs-success-emphasis-hover: #96d1bb;
+  --bs-text-on-success: #000000;
+  --bs-success-border-subtle: #365749;
+
+  --bs-info: #8badc2;
+  --bs-info-rgb: 139, 173, 194;
+  --bs-info-hover: #a1bdd0;
+  --bs-info-active: #acc5d6;
+  --bs-info-subtle: #29333a;
+  --bs-info-subtle-hover: #303c44;
+  --bs-info-subtle-active: #3e4d57;
+  --bs-info-emphasis: #adc6d7;
+  --bs-info-emphasis-hover: #a5c0d2;
+  --bs-text-on-info: #000000;
+  --bs-info-border-subtle: #3e4d57;
+
+  --bs-warning: #e8c9a5;
+  --bs-warning-rgb: 232, 201, 165;
+  --bs-warning-hover: #edd4b7;
+  --bs-warning-active: #f0dbc2;
+  --bs-warning-subtle: #443b31;
+  --bs-warning-subtle-hover: #4e4438;
+  --bs-warning-subtle-active: #665849;
+  --bs-warning-emphasis: #f1dcc3;
+  --bs-warning-emphasis-hover: #eed7bc;
+  --bs-text-on-warning: #000000;
+  --bs-warning-border-subtle: #665849;
+
+  --bs-danger: #e88f9d;
+  --bs-danger-rgb: 232, 143, 157;
+  --bs-danger-hover: #eda5b0;
+  --bs-danger-active: #f0b1ba;
+  --bs-danger-subtle: #442a2f;
+  --bs-danger-subtle-hover: #4e3136;
+  --bs-danger-subtle-active: #664047;
+  --bs-danger-emphasis: #f1b2bb;
+  --bs-danger-emphasis-hover: #eeabb5;
+  --bs-text-on-danger: #000000;
+  --bs-danger-border-subtle: #664047;
+
+  --bs-light: #f5f7f8;
+  --bs-light-rgb: 245, 247, 248;
+  --bs-light-hover: #f8f9fa;
+  --bs-light-active: #fafbfc;
+  --bs-light-subtle: #697174;
+  --bs-light-subtle-hover: #737b7e;
+  --bs-light-subtle-active: #959b9d;
+  --bs-light-emphasis: #fbfcfc;
+  --bs-light-emphasis-hover: #f9fafb;
+  --bs-text-on-light: #000000;
+  --bs-light-border-subtle: #959b9d;
+
+  --bs-dark: #2d383c;
+  --bs-dark-rgb: 45, 56, 60;
+  --bs-dark-hover: #242d30;
+  --bs-dark-active: #1f2628;
+  --bs-dark-subtle: #0d0f10;
+  --bs-dark-subtle-hover: #0f1112;
+  --bs-dark-subtle-active: #141619;
+  --bs-dark-emphasis: #697174;
+  --bs-dark-emphasis-hover: #5f676a;
+  --bs-text-on-dark: #ffffff;
+  --bs-dark-border-subtle: #141619;
+
+  --bs-border-color: #2d383c;
+  --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+  --bs-border-radius: 1rem;
+  --bs-border-width: 1px;
+}
