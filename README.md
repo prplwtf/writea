@@ -25,6 +25,6 @@ Writea has support for a bunch of nifty features which include (but is not limit
 
 <br/><br/>
 <p align="center">
-  $\color{#4b4950}{\textsf{© 2024 Emma (prpl.wtf)}}$
+  $\color{#4b4950}{\textsf{© 2024-2025 Emma (prpl.wtf)}}$
   <br/><br/><img src="https://github.com/user-attachments/assets/e6ff62c3-6d99-4e43-850d-62150706e5dd"/>
 </p>
